@@ -1,0 +1,142 @@
+{
+  "unknot": {
+    "grid_size": 2,
+    "O_columns_by_row": [
+      0,
+      1
+    ],
+    "X_columns_by_row": [
+      1,
+      0
+    ],
+    "states": 2,
+    "differential_rank": 0,
+    "homology_dimension": 2,
+    "bigraded_homology": [
+      {
+        "Alexander": -1,
+        "Maslov": -1,
+        "dimension": 1
+      },
+      {
+        "Alexander": 0,
+        "Maslov": 0,
+        "dimension": 1
+      }
+    ],
+    "rectangle_contributions": 0,
+    "hat_dimension": 1,
+    "hat_bigraded_homology": [
+      {
+        "Alexander": 0,
+        "Maslov": 0,
+        "dimension": 1
+      }
+    ],
+    "euler_characteristic": {
+      "0": 1
+    },
+    "nonwrapping_rectangle_example": null
+  },
+  "trefoil": {
+    "grid_size": 5,
+    "O_columns_by_row": [
+      3,
+      2,
+      1,
+      0,
+      4
+    ],
+    "X_columns_by_row": [
+      0,
+      4,
+      3,
+      2,
+      1
+    ],
+    "states": 120,
+    "differential_rank": 36,
+    "homology_dimension": 48,
+    "bigraded_homology": [
+      {
+        "Alexander": -5,
+        "Maslov": -6,
+        "dimension": 1
+      },
+      {
+        "Alexander": -4,
+        "Maslov": -5,
+        "dimension": 5
+      },
+      {
+        "Alexander": -3,
+        "Maslov": -4,
+        "dimension": 11
+      },
+      {
+        "Alexander": -2,
+        "Maslov": -3,
+        "dimension": 14
+      },
+      {
+        "Alexander": -1,
+        "Maslov": -2,
+        "dimension": 11
+      },
+      {
+        "Alexander": 0,
+        "Maslov": -1,
+        "dimension": 5
+      },
+      {
+        "Alexander": 1,
+        "Maslov": 0,
+        "dimension": 1
+      }
+    ],
+    "rectangle_contributions": 150,
+    "hat_dimension": 3,
+    "hat_bigraded_homology": [
+      {
+        "Alexander": -1,
+        "Maslov": -2,
+        "dimension": 1
+      },
+      {
+        "Alexander": 0,
+        "Maslov": -1,
+        "dimension": 1
+      },
+      {
+        "Alexander": 1,
+        "Maslov": 0,
+        "dimension": 1
+      }
+    ],
+    "euler_characteristic": {
+      "-1": 1,
+      "0": -1,
+      "1": 1
+    },
+    "nonwrapping_rectangle_example": {
+      "source": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "target": [
+        0,
+        2,
+        1,
+        3,
+        4
+      ],
+      "left": 1,
+      "bottom": 1,
+      "width": 1,
+      "height": 1
+    }
+  }
+}

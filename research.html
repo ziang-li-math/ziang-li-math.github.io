@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Personal academic homepage of a master's student in mathematics." />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%238dcced'/%3E%3Cpath d='M14 17h36v7H30l13 16v7H14v-7h20L21 24h-7z' fill='white'/%3E%3C/svg%3E" />
+    <script>
+      window.MathJax = {
+        tex: { inlineMath: { "[+]": [["$", "$"]] } }
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Research — Ziang Li</title>
+  </head>
+  <body data-page="research">
+    <a class="skip-link" href="#main" data-ui="skip">Skip to content</a>
+    <header class="site-header">
+      <div class="page-width header-inner">
+        <a class="site-name" href="index.html" data-profile="name">Ziang Li</a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation">
+          <span class="sr-only" data-ui="menu">Open menu</span>
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+        <nav id="navigation" class="navigation" aria-label="Main navigation">
+          <a href="index.html" data-nav="home">Home</a>
+          <a href="research.html" data-nav="research" aria-current="page">Research</a>
+          <a href="talks.html" data-nav="talks">Talks</a>
+          <a href="interesting-math.html" data-nav="interesting">Interesting Math</a>
+          <a href="personal.html" data-nav="personal">Personal</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="research" class="content-section page-width" aria-labelledby="research-title">
+        <header class="section-header">
+          <h1 id="research-title" data-nav="research">Research</h1>
+          <p data-ui="researchIntro"></p>
+        </header>
+        <section class="subsection" aria-labelledby="research-notes-title">
+          <h2 id="research-notes-title" data-ui="researchNotes">Research notes</h2>
+          <div class="research-note-list" data-list="researchNotes"></div>
+        </section>
+        <section class="subsection" aria-labelledby="publications-title">
+          <h2 id="publications-title" data-ui="publications">Preprints and publications</h2>
+          <div class="bibliography" data-list="publications"></div>
+        </section>
+        <section class="subsection" aria-labelledby="activities-title">
+          <h2 id="activities-title" data-ui="activities">Academic activities</h2>
+          <div class="activity-list" data-list="activities"></div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width footer-inner">
+        <p>© <span id="year"></span> <span data-profile="name">Ziang Li</span></p>
+        <p data-ui="updated">Last updated September 2026.</p>
+      </div>
+    </footer>
+    <script src="content.js?v=20261003-thesis-supervisors"></script>
+    <script src="app.js?v=20261003-thesis-supervisors"></script>
+  </body>
+</html>

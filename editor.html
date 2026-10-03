@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Homepage content editor</title>
+    <script>
+      window.MathJax = {
+        tex: { inlineMath: { "[+]": [["$", "$"]] } }
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
+    <link rel="stylesheet" href="editor.css" />
+  </head>
+  <body>
+    <header class="editor-header">
+      <div>
+        <p class="editor-kicker">Mathematics homepage</p>
+        <h1>Homepage content editor</h1>
+      </div>
+      <div class="header-actions">
+        <span id="save-status" class="save-status" aria-live="polite">Current content loaded</span>
+        <a class="button button-secondary" href="index.html" target="_blank" rel="noopener">Open homepage</a>
+        <button id="export-button" class="button button-primary" type="button">Save content.js</button>
+      </div>
+    </header>
+
+    <div class="editor-layout">
+      <aside class="editor-sidebar">
+        <nav class="editor-nav" aria-label="Edit pages">
+          <button type="button" data-section="home" class="is-active">Home</button>
+          <button type="button" data-section="research">Research</button>
+          <button type="button" data-section="talks">Talks</button>
+          <button type="button" data-section="interesting">Interesting Math</button>
+          <button type="button" data-section="personal">Personal</button>
+        </nav>
+
+        <div class="sidebar-note">
+          <strong>How to use</strong>
+          <p>Changes are saved in this browser. Click “Save content.js” when finished, then replace the website’s content.js with the exported file.</p>
+        </div>
+
+        <button id="reset-button" class="text-button" type="button">Discard draft and reload</button>
+      </aside>
+
+      <main class="editor-main">
+        <div id="editor-root"></div>
+      </main>
+    </div>
+
+    <template id="empty-template">
+      <div class="empty-state">No entries yet. Click “Add entry” to create one.</div>
+    </template>
+
+    <script src="content.js?v=20261003-thesis-supervisors"></script>
+    <script src="editor.js?v=20261003-thesis-supervisors"></script>
+  </body>
+</html>
